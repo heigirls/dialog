@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="drapwin">弹窗</div>
+    <script src="alert.js"></script>
+    <script type="text/javascript">
+        var drapwin=document.querySelector(".drapwin");
+        drapwin.onclick=function(){
+            new A({
+                width:300,
+                height:200,
+                background:"#fff",
+                content:"我是大美女",
+                btn:["确定","取消"],
+                sure:function(){
+                    alert('悠悠一缕斜阳')
+                },
+                close:function(){
+                    alert('刺挠')
+                }
+            });
+        }
+    </script>
+</body>
+</html>
